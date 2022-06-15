@@ -1,6 +1,4 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from'./router'
+import Vue from 'vue';
 import {
   Pagination,
   Dialog,
@@ -81,9 +79,6 @@ import {
   Notification
 } from 'element-ui';
 
-import 'element-ui/lib/theme-chalk/index.css';
-
-
 Vue.use(Pagination);
 Vue.use(Dialog);
 Vue.use(Autocomplete);
@@ -160,17 +155,10 @@ Vue.use(CascaderPanel);
 
 Vue.use(Loading.directive);
 
-// Vue.use(Button);
-// Vue.use(Container);
-// Vue.use(Aside);
-// Vue.use(Main);
-// Vue.use(Header);
-// Vue.use(Button);
-
-
-Vue.config.productionTip = false
-
-new Vue({
-  router,
-  render: h => h(App),
-}).$mount('#app')
+Vue.prototype.$loading = Loading.service;
+Vue.prototype.$msgbox = MessageBox;
+Vue.prototype.$alert = MessageBox.alert;
+Vue.prototype.$confirm = MessageBox.confirm;
+Vue.prototype.$prompt = MessageBox.prompt;
+Vue.prototype.$notify = Notification;
+Vue.prototype.$message = Message;

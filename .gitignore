@@ -21,3 +21,17 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+     <div class="tab-bar-item">
+           <img  src="~assets/img/tabBar/分类.png" alt="">
+          分类
+          </div>
+
+      <div class="tab-bar-item">
+          <img src="~assets/img/tabBar/购物车.png" alt="">
+          购物车</div>
+
+      <div class="tab-bar-item">
+           <img  src="~assets/img/tabBar/我的.png" alt="">
+          我的
+          </div>
